@@ -1,0 +1,14 @@
+<div class="form-card">
+    <h2>Color Form</h2>
+    <form [formGroup]="colorForm">   
+        <div class="form-group">
+            <label for="color">Titre</label>
+            <input id="color" type="text" formControlName="favoriteColor">
+        </div>
+        <div class="action-buttons">
+            <button type="submit" (click)="submit()">Enregistrer</button>
+        </div>
+
+        <p> {{ favoriteColor }} </p>
+    </form>
+</div>

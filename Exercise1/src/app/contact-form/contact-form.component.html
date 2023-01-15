@@ -1,0 +1,10 @@
+<form #contactForm="ngForm" (ngSubmit)="submitting(contactForm)">
+    <label for="name">Name</label> &nbsp;&nbsp;
+    <input type="text" name="name" [(ngModel)]="myContact.name"> <br>
+    <label for="email">Email</label> &nbsp;&nbsp;
+    <input type="email" name="email" id="email" [(ngModel)]="myContact.email"> <br>
+    <label for="messae">Message</label> &nbsp;&nbsp;
+    <textarea name="message" id="messae" [(ngModel)]="myContact.messaage" cols="30" rows="10"></textarea> <br>
+
+    <input type="submit" value="Valider">
+</form>
